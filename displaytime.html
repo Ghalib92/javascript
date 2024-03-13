@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The button below shows wat time it is...</p>
+    <!--the date is written starting with html-->
+    
+    <script>
+        window.alert("I will display the time");
+     </script>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">what is the time??</button>
+     <P id="demo"></P>
+     <button onclick="this.innerHTML=Date()">show time</button><br>
+    <br> <button onclick="displayDate()">The time is </button>
+     <script>
+        //my function is display date
+        function displayDate() {
+            document.getElementById("demo").innerHTML=Date();
+        }
+     </script>
+    
+</body>
+</html>
